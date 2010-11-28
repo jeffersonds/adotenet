@@ -1,37 +1,50 @@
-<fieldset class="radius shadow">
-  <div class="top">
-    <h2>Adoção</h2>
-    <a href="javascript:void(0);">Ver todos animais em Adoção</a>
-  </div>
-  <article class="nopdr">
-    <img src="img/cachorro1.jpg" width="160" height="150" alt="" />
-    <ul>
-      <li><strong>Animal: </strong>Cachorro</li>
-      <li><strong>Sexo: </strong>Macho</li>
-      <li><strong>Idade: </strong>5</li>
-      <li><strong>Raça: </strong>Vira Lata</li>
-      <li><strong>Castrado: </strong>Sim</li>
-      <li><strong>Vermifugado: </strong>Sim</li>
-      <li><strong>Vacinado: </strong>Sim</li>
-      <li><a href="javascript:void(0);">Saiba mais ></a></li>
-    </ul>
-    <p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>  
-  </article>
-  <article>
-    <img class="shadow" src="img/cachorro2.jpg" width="160" height="150" alt="" />
-    <ul>
-      <li><strong>Animal: </strong>Cachorro</li>
-      <li><strong>Sexo: </strong>Macho</li>
-      <li><strong>Idade: </strong>5</li>
-      <li><strong>Raça: </strong>Vira Lata</li>
-      <li><strong>Castrado: </strong>Sim</li>
-      <li><strong>Vermifugado: </strong>Sim</li>
-      <li><strong>Vacinado: </strong>Sim</li>
-      <li><a href="javascript:void(0);">Saiba mais ></a></li>
-    </ul>
-    <p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>  
-  </article>
-</fieldset>
+<% @tipos.each do |tipo| %>
+	<fieldset class="radius shadow">
+		<% tipo.animals.limit(2) do |animal| %>
+			
+			<div class="top">
+				<h2>Adoção</h2>
+				<a href="javascript:void(0);">Ver todos animais em Adoção</a>
+			</div>
+			  <article class="nopdr">
+			    <img src="img/cachorro1.jpg" width="160" height="150" alt="" />
+			    <ul>
+			      <li><strong>Animal: </strong>Cachorro</li>
+			      <li><strong>Sexo: </strong>Macho</li>
+			      <li><strong>Idade: </strong>5</li>
+			      <li><strong>Raça: </strong>Vira Lata</li>
+			      <li><strong>Castrado: </strong>Sim</li>
+			      <li><strong>Vermifugado: </strong>Sim</li>
+			      <li><strong>Vacinado: </strong>Sim</li>
+			      <li><a href="javascript:void(0);">Saiba mais ></a></li>
+			    </ul>
+			    <p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>  
+			  </article>
+			
+		<% end %>
+		
+	  
+	  <article>
+	    <img class="shadow" src="img/cachorro2.jpg" width="160" height="150" alt="" />
+	    <ul>
+	      <li><strong>Animal: </strong>Cachorro</li>
+	      <li><strong>Sexo: </strong>Macho</li>
+	      <li><strong>Idade: </strong>5</li>
+	      <li><strong>Raça: </strong>Vira Lata</li>
+	      <li><strong>Castrado: </strong>Sim</li>
+	      <li><strong>Vermifugado: </strong>Sim</li>
+	      <li><strong>Vacinado: </strong>Sim</li>
+	      <li><a href="javascript:void(0);">Saiba mais ></a></li>
+	    </ul>
+	    <p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>  
+	  </article>
+	
+	
+	
+	</fieldset>
+<% end %>
+
+
 <fieldset class="radius shadow">
   <div class="top">
     <h2>Procura-se</h2>

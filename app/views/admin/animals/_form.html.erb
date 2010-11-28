@@ -2,7 +2,7 @@
 
 <p>
   <%= f.label :usuario %><br />
-  <%= f.text_field :usuario %>
+  <%= f.collection_select(:tipo_id, User.all, :id, :login ) %>
 </p>
 <p>
   <%= f.label :nome %><br />

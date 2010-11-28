@@ -1,7 +1,7 @@
 class MainController < ApplicationController
   
   def index
-    @animals = Animal.all
+    @tipos = Tipo.all
   end
   
   def show
