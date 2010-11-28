@@ -6,7 +6,7 @@
 				<a href="javascript:void(0);">Ver todos animais em <%= tipo.nome %></a>
 			</div>
 			<article class="nopdr">
-				<img src="img/cachorro1.jpg" width="160" height="150" alt="" />
+				<%= image_tag (animal.photo.url(:small)), :width => "160", :height => "150" %>
 				<ul>
 					<li><strong>Animal: </strong><%= tipo.nome %></li>
 					<li><strong>Sexo: </strong><%= tipo.nome %></li>
