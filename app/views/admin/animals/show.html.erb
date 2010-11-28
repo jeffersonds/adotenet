@@ -1,0 +1,63 @@
+<p>
+  <b>Usuario:</b>
+  <%=h @animal.usuario %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%=h @animal.nome %>
+</p>
+
+<p>
+  <b>Idate:</b>
+  <%=h @animal.idate %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%=h @animal.tipo %>
+</p>
+
+<p>
+  <b>Raca:</b>
+  <%=h @animal.raca %>
+</p>
+
+<p>
+  <b>Porte:</b>
+  <%=h @animal.porte %>
+</p>
+
+<p>
+  <b>Castrado:</b>
+  <%=h @animal.castrado %>
+</p>
+
+<p>
+  <b>Vermifugado:</b>
+  <%=h @animal.vermifugado %>
+</p>
+
+<p>
+  <b>Vacinado:</b>
+  <%=h @animal.vacinado %>
+</p>
+
+<p>
+  <b>Descricao:</b>
+  <%=h @animal.descricao %>
+</p>
+
+<p>
+  <b>Classificacao:</b>
+  <%=h @animal.classificacao %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @animal.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_animal_path(@animal) %> |
+<%= link_to 'Back', admin_animals_path %>

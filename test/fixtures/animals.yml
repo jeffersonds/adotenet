@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  usuario: 
+  nome: MyString
+  idate: 1
+  tipo: 
+  raca: 
+  porte: MyString
+  castrado: false
+  vermifugado: false
+  vacinado: false
+  descricao: MyText
+  classificacao: 1
+  status: false
+
+two:
+  usuario: 
+  nome: MyString
+  idate: 1
+  tipo: 
+  raca: 
+  porte: MyString
+  castrado: false
+  vermifugado: false
+  vacinado: false
+  descricao: MyText
+  classificacao: 1
+  status: false

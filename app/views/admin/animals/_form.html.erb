@@ -1,0 +1,55 @@
+<%= f.error_messages %>
+
+<p>
+  <%= f.label :usuario %><br />
+  <%= f.text_field :usuario %>
+</p>
+<p>
+  <%= f.label :nome %><br />
+  <%= f.text_field :nome %>
+</p>
+<p>
+  <%= f.label :idate %><br />
+  <%= f.text_field :idate %>
+</p>
+
+<p>
+ <%= f.label :tipo %><br />
+ <%= f.collection_select(:tipo_id, Tipo.all, :id, :nome ) %>
+</p>
+
+<p>
+  <%= f.label :raca %><br />
+  <%= f.text_field :raca %>
+</p>
+<p>
+  <%= f.label :porte %><br />
+  <%= f.text_field :porte %>
+</p>
+<p>
+  <%= f.label :castrado %><br />
+  <%= f.check_box :castrado %>
+</p>
+<p>
+  <%= f.label :vermifugado %><br />
+  <%= f.check_box :vermifugado %>
+</p>
+<p>
+  <%= f.label :vacinado %><br />
+  <%= f.check_box :vacinado %>
+</p>
+<p>
+  <%= f.label :descricao %><br />
+  <%= f.text_area :descricao %>
+</p>
+<p>
+  <%= f.label :classificacao %><br />
+  <%= f.text_field :classificacao %>
+</p>
+<p>
+  <%= f.label :status %><br />
+  <%= f.check_box :status %>
+</p>
+<p>
+  <%= f.submit 'Create' %>
+</p>

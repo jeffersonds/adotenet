@@ -1,0 +1,42 @@
+<h1>Listing animals</h1>
+
+<table>
+  <tr>
+    <th>Usuario</th>
+    <th>Nome</th>
+    <th>Idate</th>
+    <th>Tipo</th>
+    <th>Raca</th>
+    <th>Porte</th>
+    <th>Castrado</th>
+    <th>Vermifugado</th>
+    <th>Vacinado</th>
+    <th>Descricao</th>
+    <th>Classificacao</th>
+    <th>Status</th>
+  </tr>
+
+<% @animals.each do |animal| %>
+  <tr>
+    <td><%# animal.usuario %></td>
+    <td><%=h animal.nome %></td>
+    <td><%=h animal.idate %></td>
+    <td><%=h animal.tipo.nome unless animal.tipo.blank? %></td>
+    <td><%# animal.raca %></td>
+    <td><%=h animal.porte %></td>
+    <td><%=h animal.castrado %></td>
+    <td><%=h animal.vermifugado %></td>
+    <td><%=h animal.vacinado %></td>
+    <td><%=h animal.descricao %></td>
+    <td><%=h animal.classificacao %></td>
+    <td><%=h animal.status %></td>
+    <td><%= link_to 'Show', [:admin, animal] %></td>
+    <td><%= link_to 'Edit', edit_admin_animal_path(animal) %></td>
+    <td><%= link_to 'Destroy', [:admin, animal], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New animal', new_admin_animal_path %>

@@ -1,0 +1,19 @@
+<h1>Contato</h1>
+<br /><br />
+<form onsubmit="return validacao();" method="post" action="index.html" name="contato">
+	<div class="form">
+		<label for="nome">
+			Nome:<br />
+			<input type="text" id="nome" name="nome">	
+		</label><br /><br />					
+		<label for="email">
+			Email:<br />
+			<input type="text" id="email" name="email"><span style="color: red; display: none;" id="span"> E-mail incorreto.</span>
+		</label><br /><br />
+		<label for="mensagem">
+			Mensagem:<br />
+			<textarea cols="50" rows="20" id="mensagem" name="mensagem"></textarea>
+		</label><br /><br />								
+		<input type="submit" value="Enviar" style="width: 50px;">&nbsp;&nbsp;(Todos os campos são obrigatórios.)
+	</div>
+</form>

@@ -1,0 +1,4493 @@
+
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAnimals (20101113180631)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "animals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario_id" integer, "nome" varchar(255), "idate" integer, "tipo_id" integer, "raca_id" integer, "porte" varchar(255), "castrado" boolean, "vermifugado" boolean, "vacinado" boolean, "descricao" text, "classificacao" integer, "status" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101113180631')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("animals")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 16:17:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:37:06) [GET]
+Rendering main/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:48:58) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:49:37) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:49:38) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:49:38) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:50:01) [GET]
+Rendering main/index
+Completed in 49ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:50:02) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:50:02) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:50:02) [GET]
+Rendering main/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:50:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 16:52:46) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 17:16:54) [GET]
+
+ActionController::RoutingError (No route matches "/css/css.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 17:16:54) [GET]
+
+ActionController::RoutingError (No route matches "/img/cachorro1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 17:16:54) [GET]
+
+ActionController::RoutingError (No route matches "/img/cachorro2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 17:44:02) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Completed in 363ms (View: 361, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 17:49:44) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.9ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 17:50:11) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.8ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+/!\ FAILSAFE /!\  Sat Nov 13 18:09:49 -0200 2010
+  Status: 500 Internal Server Error
+  Expected /Users/jeffersondanielsantos/web_rails/adotenet/app/helpers/admin/animals_helper.rb to define Admin::AnimalsHelper
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:426:in `load_missing_constant'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:361:in `constantize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/inflector.rb:360:in `constantize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/string/inflections.rb:162:in `constantize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:137:in `helper'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:120:in `helper'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/helpers.rb:115:in `helper'
+    /Users/jeffersondanielsantos/web_rails/adotenet/app/controllers/application_controller.rb:5
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_without_new_constant_marking'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:380:in `load_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:379:in `load_file'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:259:in `require_or_load'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:425:in `load_missing_constant'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:80:in `const_missing'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:92:in `const_missing'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:89:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 18:12:07) [GET]
+
+LoadError (Expected /Users/jeffersondanielsantos/web_rails/adotenet/app/controllers/admin/animals_controller.rb to define Admin::AnimalsController):
+  
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:12:43) [GET]
+  [4;36;1mAnimal Load (0.5ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/application
+Rendering admin/animals/index
+
+ActionView::TemplateError (undefined local variable or method `new_animal_path' for #<ActionView::Base:0x1023a9960>) on line #42 of app/views/admin/animals/index.html.erb:
+39: 
+40: <br />
+41: 
+42: <%= link_to 'New animal', new_animal_path %>
+
+    app/views/admin/animals/index.html.erb:42
+    app/controllers/admin/animals_controller.rb:7:in `index'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:15:23) [GET]
+  [4;35;1mAnimal Load (0.4ms)[0m   [0mSELECT * FROM "animals" [0m
+Rendering template within layouts/application
+Rendering admin/animals/index
+Rendered shared/_header (0.7ms)
+Completed in 70ms (View: 65, DB: 0) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:17:17) [GET]
+  [4;36;1mAnimal Load (0.4ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:23:56) [GET]
+  [4;35;1mAnimal Load (0.4ms)[0m   [0mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:23:58) [GET]
+  [4;36;1mAnimal Load (0.4ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:24:00) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+
+ActionView::TemplateError (undefined method `animals_path' for #<ActionView::Base:0x101dc1278>) on line #3 of app/views/admin/animals/new.html.erb:
+1: <h1>New animal</h1>
+2: 
+3: <% form_for(@animal) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/admin/animals/new.html.erb:3
+    app/controllers/admin/animals_controller.rb:29:in `new'
+
+Rendered rescues/_trace (116.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:26:58) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+
+ActionView::TemplateError (undefined local variable or method `animals_path' for #<ActionView::Base:0x101d743b0>) on line #59 of app/views/admin/animals/new.html.erb:
+56:   </p>
+57: <% end %>
+58: 
+59: <%= link_to 'Back', animals_path %>
+
+    app/views/admin/animals/new.html.erb:59
+    app/controllers/admin/animals_controller.rb:29:in `new'
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:27:39) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:28:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"", "tipo"=>"", "idate"=>"hkjh", "nome"=>"kjhk", "porte"=>"", "usuario"=>"kjh", "raca"=>"", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"h", "vermifugado"=>"0"}}
+
+NameError (uninitialized constant Animal::Tipo):
+  app/controllers/admin/animals_controller.rb:43:in `new'
+  app/controllers/admin/animals_controller.rb:43:in `create'
+
+Rendered rescues/_trace (109.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:28:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"", "tipo"=>"", "idate"=>"hkjh", "nome"=>"kjhk", "porte"=>"", "usuario"=>"kjh", "raca"=>"", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"h", "vermifugado"=>"0"}}
+
+NameError (uninitialized constant Animal::Tipo):
+  app/controllers/admin/animals_controller.rb:43:in `new'
+  app/controllers/admin/animals_controller.rb:43:in `create'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAnimals (20101113180631)
+Migrating to CreateTipos (20101113203025)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101113203025')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("animals")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tipos")[0m
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:30:48) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:30:51) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:30:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"", "tipo"=>"", "idate"=>"hkjh", "nome"=>"kjhk", "porte"=>"", "usuario"=>"kjh", "raca"=>"", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"h", "vermifugado"=>"0"}}
+
+ActiveRecord::AssociationTypeMismatch (Tipo(#2162734660) expected, got String(#2148287480)):
+  app/controllers/admin/animals_controller.rb:43:in `new'
+  app/controllers/admin/animals_controller.rb:43:in `create'
+
+Rendered rescues/_trace (101.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:34:42) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;35;1mTipo Load (0.2ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (11.5ms)
+Completed in 30ms (View: 23, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 18:35:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2010-11-13 18:35:06) [GET]
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/tipos
+Rendering tipos/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/tipos]
+
+
+Processing TiposController#new (for 127.0.0.1 at 2010-11-13 18:35:09) [GET]
+Rendering template within layouts/tipos
+Rendering tipos/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/tipos/new]
+
+
+Processing TiposController#create (for 127.0.0.1 at 2010-11-13 18:35:18) [POST]
+  Parameters: {"tipo"=>{"nome"=>"Primeiro tipo"}, "commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss="}
+  [4;35;1mTipo Create (0.5ms)[0m   [0mINSERT INTO "tipos" ("created_at", "nome", "updated_at") VALUES('2010-11-13 20:35:18', 'Primeiro tipo', '2010-11-13 20:35:18')[0m
+Redirected to http://localhost:3000/tipos/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/tipos]
+
+
+Processing TiposController#show (for 127.0.0.1 at 2010-11-13 18:35:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTipo Load (0.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Rendering template within layouts/tipos
+Rendering tipos/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/tipos/1]
+
+
+Processing TiposController#index (for 127.0.0.1 at 2010-11-13 18:35:20) [GET]
+  [4;35;1mTipo Load (0.5ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendering template within layouts/tipos
+Rendering tipos/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/tipos]
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:35:23) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;36;1mTipo Load (0.3ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (11.9ms)
+Completed in 22ms (View: 15, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:35:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"", "idate"=>"hkjh", "nome"=>"kjhk", "porte"=>"", "usuario"=>"kjh", "raca"=>"", "tipo_id"=>"1", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"h", "vermifugado"=>"0"}}
+
+NameError (uninitialized constant Animal::Usuario):
+  app/controllers/admin/animals_controller.rb:43:in `new'
+  app/controllers/admin/animals_controller.rb:43:in `create'
+
+Rendered rescues/_trace (104.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:36:09) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"", "idate"=>"hkjh", "nome"=>"kjhk", "porte"=>"", "usuario"=>"kjh", "raca"=>"", "tipo_id"=>"1", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"h", "vermifugado"=>"0"}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: usuario):
+  app/controllers/admin/animals_controller.rb:43:in `new'
+  app/controllers/admin/animals_controller.rb:43:in `create'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:36:32) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+
+ActionView::TemplateError (undefined method `raca' for #<Animal:0x1021686d8>) on line #19 of app/views/admin/animals/_form.html.erb:
+16: 
+17: <p>
+18:   <%= f.label :raca %><br />
+19:   <%= f.text_field :raca %>
+20: </p>
+21: <p>
+22:   <%= f.label :porte %><br />
+
+    app/views/admin/animals/_form.html.erb:19
+    app/views/admin/animals/new.html.erb:4
+    app/views/admin/animals/new.html.erb:3
+    app/controllers/admin/animals_controller.rb:29:in `new'
+
+Rendered rescues/_trace (131.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:36:39) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;36;1mTipo Load (0.3ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+
+ActionView::TemplateError (undefined method `raca' for #<Animal:0x101f3b400>) on line #19 of app/views/admin/animals/_form.html.erb:
+16: 
+17: <p>
+18:   <%= f.label :raca %><br />
+19:   <%= f.text_field :raca %>
+20: </p>
+21: <p>
+22:   <%= f.label :porte %><br />
+
+    app/views/admin/animals/_form.html.erb:19
+    app/views/admin/animals/new.html.erb:4
+    app/views/admin/animals/new.html.erb:3
+    app/controllers/admin/animals_controller.rb:29:in `new'
+
+Rendered rescues/_trace (130.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-13 18:36:47) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (12.6ms)
+Completed in 25ms (View: 19, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-11-13 18:37:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"aECYQt2bCg0JrKSROm5BNC50AvpAc27d8yB7d2suoss=", "animal"=>{"classificacao"=>"kj", "idate"=>"kj", "nome"=>"kjh", "porte"=>"hk", "tipo_id"=>"1", "castrado"=>"0", "vacinado"=>"0", "status"=>"0", "descricao"=>"jh", "vermifugado"=>"0"}}
+  [4;36;1mAnimal Create (0.4ms)[0m   [0;1mINSERT INTO "animals" ("classificacao", "idate", "created_at", "usuario_id", "nome", "updated_at", "porte", "tipo_id", "raca_id", "castrado", "vacinado", "descricao", "status", "vermifugado") VALUES(0, 0, '2010-11-13 20:37:15', NULL, 'kjh', '2010-11-13 20:37:15', 'hk', 1, NULL, 'f', 'f', 'jh', 'f', 'f')[0m
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x101776b48>):
+  app/controllers/admin/animals_controller.rb:48:in `create'
+  app/controllers/admin/animals_controller.rb:45:in `create'
+
+Rendered rescues/_trace (106.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:37:44) [GET]
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+
+ActionView::TemplateError (undefined method `usuario' for #<Animal:0x101e0a540>) on line #21 of app/views/admin/animals/index.html.erb:
+18: 
+19: <% @animals.each do |animal| %>
+20:   <tr>
+21:     <td><%=h animal.usuario %></td>
+22:     <td><%=h animal.nome %></td>
+23:     <td><%=h animal.idate %></td>
+24:     <td><%=h animal.tipo %></td>
+
+    app/views/admin/animals/index.html.erb:21
+    app/views/admin/animals/index.html.erb:19:in `each'
+    app/views/admin/animals/index.html.erb:19
+    app/controllers/admin/animals_controller.rb:7:in `index'
+
+Rendered rescues/_trace (117.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:38:01) [GET]
+  [4;36;1mAnimal Load (0.6ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+ERROR: compiling _run_erb_app47views47admin47animals47index46html46erb RAISED compile error
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:37: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+      ^
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:43: syntax error, unexpected kENSURE, expecting ')'
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:45: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47admin47animals47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Listing animals</h1>\n\n<table>\n  <tr>\n    <th>Usuario</th>\n    <th>Nome</th>\n    <th>Idate</th>\n    <th>Tipo</th>\n    <th>Raca</th>\n    <th>Porte</th>\n    <th>Castrado</th>\n    <th>Vermifugado</th>\n    <th>Vacinado</th>\n    <th>Descricao</th>\n    <th>Classificacao</th>\n    <th>Status</th>\n  </tr>\n\n"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;  @animals.each do |animal| ; @output_buffer.concat "\n  <tr>\n    <td>"
+
+; @output_buffer.concat((# animal.usuario ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.nome ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.idate ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.tipo ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((# animal.raca ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.porte ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.castrado ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.vermifugado ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.vacinado ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.descricao ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.classificacao ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat((h animal.status ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Show', [:admin, animal] ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Edit', edit_admin_animal_path(animal) ).to_s); @output_buffer.concat "</td>\n    <td>"
+; @output_buffer.concat(( link_to 'Destroy', [:admin, animal], :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n  </tr>\n"
+
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+
+
+
+
+; @output_buffer.concat(( link_to 'New animal', new_admin_animal_path ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:45:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/jeffersondanielsantos/web_rails/adotenet/app/controllers/admin/animals_controller.rb:7:in `index'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:37: syntax error, unexpected kEND, expecting ')'
+;  end ; @output_buffer.concat "\n</table>\n\n<br />\n\n"
+      ^
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:43: syntax error, unexpected kENSURE, expecting ')'
+/Users/jeffersondanielsantos/web_rails/adotenet/app/views/admin/animals/index.html.erb:45: syntax error, unexpected kEND, expecting ')') on line #37 of app/views/admin/animals/index.html.erb:
+34:     <td><%= link_to 'Edit', edit_admin_animal_path(animal) %></td>
+35:     <td><%= link_to 'Destroy', [:admin, animal], :confirm => 'Are you sure?', :method => :delete %></td>
+36:   </tr>
+37: <% end %>
+38: </table>
+39: 
+40: <br />
+
+    app/views/admin/animals/index.html.erb:45:in `compile!'
+    app/controllers/admin/animals_controller.rb:7:in `index'
+
+Rendered rescues/_trace (112.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:38:12) [GET]
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;36;1mTipo Load (0.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-13 18:39:14) [GET]
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;36;1mTipo Load (0.2ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 21ms (View: 16, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-11-13 18:39:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAnimal Load (0.3ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+
+ActionView::TemplateError (undefined method `animal_path' for #<ActionView::Base:0x101d17bb0>) on line #3 of app/views/admin/animals/edit.html.erb:
+1: <h1>Editing animal</h1>
+2: 
+3: <% form_for(@animal) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/admin/animals/edit.html.erb:3
+
+Rendered rescues/_trace (110.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-11-13 18:40:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (10.4ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://localhost/admin/animals/1/edit]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-13 18:40:34) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-13 18:41:17) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/main/quem_somos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-13 18:41:24) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-13 18:41:57) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-13 18:43:02) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-13 18:43:05) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-13 18:44:19) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-16 22:46:37) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (20.5ms)
+Completed in 117ms (View: 115, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 22:46:49) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-16 22:52:01) [GET]
+  [4;36;1mAnimal Load (14.2ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.6ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 166ms (View: 110, DB: 15) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#show (for 127.0.0.1 at 2010-11-16 22:52:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/show
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 352ms (View: 344, DB: 1) | 200 OK [http://localhost/admin/animals/1]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-16 23:08:02) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:08:07) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-16 23:08:16) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/index.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-16 23:30:05) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.8ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/quem_somos]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:30:07) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:30:14) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:31:09) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-16 23:31:51) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:31:54) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-16 23:40:51) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-16 23:50:56) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-16 23:50:59) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:09:32) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (18.4ms)
+Completed in 104ms (View: 102, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:17:04) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:22:32) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:22:47) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:23:13) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:23:37) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:31:58) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:31:59) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:08) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:12) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:31) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:32) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:33) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:33) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:33) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:34) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:40) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:48) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:32:50) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:33:06) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:33:14) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:33:15) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:33:17) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:33:21) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-17 22:33:25) [GET]
+
+ActionController::RoutingError (No route matches "/contato/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:34:19) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:34:23) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:34:26) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:34:30) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:34:33) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:34:36) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:34:39) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:34:41) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:34:44) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:34:49) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:35:57) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:35:59) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:36:03) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:36:59) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:40:45) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:41:27) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:41:30) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:41:32) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:41:35) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:45:36) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:49:45) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:50:58) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:52:10) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:08) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:09) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:09) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:09) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:09) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:10) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:10) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:53:13) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:56:04) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:56:18) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:58:16) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:58:42) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 22:58:48) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 60ms (View: 58, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 22:59:09) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 22:59:11) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 22:59:13) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:02:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:02:55) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:09:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:09:05) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:10:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:10:27) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 52ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:11:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:11:40) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:13:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.8ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:13:25) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:16:14) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:16:48) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:16:50) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:17:25) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:18:17) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:19:39) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:22:32) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.8ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:23:41) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:24:37) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.8ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 23:25:07) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 23:25:11) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 23:25:13) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 23:25:28) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 23:26:00) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:26:06) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:28:32) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:32:02) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-17 23:33:14) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-17 23:37:35) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-17 23:38:46) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 23:39:16) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-17 23:41:14) [GET]
+  [4;36;1mAnimal Load (16.2ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 119ms (View: 55, DB: 16) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-11-17 23:41:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (355.7ms)
+Completed in 373ms (View: 366, DB: 1) | 200 OK [http://localhost/admin/animals/1/edit]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-17 23:42:23) [GET]
+  [4;36;1mAnimal Load (0.6ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/animals/]
+
+
+Processing Admin::AnimalsController#show (for 127.0.0.1 at 2010-11-17 23:42:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/show
+  [4;35;1mTipo Load (0.2ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 96ms (View: 37, DB: 1) | 200 OK [http://localhost/admin/animals/1]
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-11-17 23:43:05) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;36;1mTipo Load (0.3ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (11.5ms)
+Completed in 25ms (View: 18, DB: 0) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-17 23:53:53) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-18 00:49:46) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 13:29:55) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (17.1ms)
+Completed in 139ms (View: 137, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-24 13:39:34) [GET]
+
+ActionController::RoutingError (No route matches "/admin/posts/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-24 13:40:12) [GET]
+
+ActionController::RoutingError (No route matches "/admin/posts/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 13:40:18) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.2ms)
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 13:40:18) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-24 13:40:20) [GET]
+
+ActionController::RoutingError (No route matches "/admin/posts/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-24 13:40:29) [GET]
+
+ActionController::RoutingError (No route matches "/admin/posts/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 13:49:47) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/main]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-24 20:41:04) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (19.9ms)
+Completed in 220ms (View: 219, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 20:41:08) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 33ms (View: 31, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-24 20:41:10) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 20:41:18) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-24 21:05:36) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:05:39) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-24 21:05:40) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 21:05:45) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-24 21:10:39) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:11:06) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-24 21:11:15) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-24 21:12:54) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:12:56) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-24 21:12:58) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 21:13:12) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-24 21:36:12) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:36:14) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:36:34) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-24 21:36:40) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-24 21:36:49) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-24 21:37:10) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 14:55:00) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.8ms)
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 16:30:13) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 16:30:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 16:30:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 16:59:12) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 16:59:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:27:39) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:27:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:27:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:27:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:30:08) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:30:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:30:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:30:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:31:06) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:31:53) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:31:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:35:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:44:16) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.7ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:44:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:44:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:44:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:45:05) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.7ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:45:48) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:45:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:46:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (3.6ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:46:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:46:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:46:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:47:06) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.8ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:47:29) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.8ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:47:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:48:53) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (2.7ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:48:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:48:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:48:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:51:16) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:51:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:51:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:51:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:52:31) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:52:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:52:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:52:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:57:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:57:35) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:57:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 17:58:00) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:58:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:58:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 17:58:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 18:00:08) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:00:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:00:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 18:05:50) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:05:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:05:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 18:05:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:02:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.5ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:02:14) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:02:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:02:58) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:03:35) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:04:58) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:04:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:05:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:05:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:09:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:10:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:10:52) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:10:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/img/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:10:57) [GET]
+
+ActionController::RoutingError (No route matches "/img/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/images/transparent-bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:11:24) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/selected-item.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:11:57) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:11:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:16:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (52.0ms)
+Completed in 58ms (View: 57, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:16:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:17:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:17:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:18:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:18:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:19:07) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:19:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:19:36) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:19:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:19:55) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:19:55) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:19:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:20:39) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:20:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:22:25) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:22:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:22:33) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:22:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:22:34) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:22:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:22:37) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:22:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:25:11) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:25:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:26:48) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:26:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:27:57) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:27:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:28:46) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:28:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:29:15) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:29:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:29:54) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:29:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:40:29) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:40:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:41:09) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:41:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:41:49) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:41:49) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:41:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 19:42:21) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 759ms (View: 758, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:42:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:11) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:12) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:12) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:12) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:12) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:12) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:56:24) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:26) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 19:56:28) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 19:56:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:36:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:36:51) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:36:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/,,/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:36:59) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:37:03) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:04) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:05) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:05) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:08) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:37:53) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:54) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:37:56) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 20:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/slide/bg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:38:34) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:40:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:47:52) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:53:32) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:54:46) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:56:07) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:57:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:57:34) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 20:57:48) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:00:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:00:48) [GET]
+
+ActionController::RoutingError (No route matches "/admin/posts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:00:54) [GET]
+
+ActionController::RoutingError (No route matches "/admin/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-27 21:01:01) [GET]
+  [4;36;1mAnimal Load (16.3ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.7ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 121ms (View: 65, DB: 17) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-11-27 21:01:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.5ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+Rendered admin/animals/_form (33.1ms)
+Completed in 53ms (View: 45, DB: 1) | 200 OK [http://localhost/admin/animals/1/edit]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-27 21:04:54) [GET]
+  [4;36;1mAnimal Load (0.6ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.2ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 17ms (View: 11, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-27 21:11:32) [GET]
+  [4;36;1mAnimal Load (0.6ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.2ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 70ms (View: 64, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:11:40) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg2.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:11:49) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:11:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg2.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:11:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/img/bg2.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:12:54) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:14:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:14:59) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:00) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:00) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:00) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:00) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 336ms (View: 335, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:11) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:17) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:28) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:44) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3-small.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-27 21:16:45) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:17:05) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:32:13) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.5ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:38:54) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 59ms (View: 58, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:39:00) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:41:28) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:42:24) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:42:46) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:42:49) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:46:36) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:47:04) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:54:45) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:55:35) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:56:05) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 52ms (View: 50, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 21:59:43) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 22:01:08) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 22:03:44) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-27 22:04:00) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 15:59:22) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 46ms (View: 44, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 16:00:22) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-28 16:20:39) [GET]
+  [4;36;1mAnimal Load (0.6ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 42ms (View: 33, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 16:20:42) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (1.6ms)
+Completed in 67ms (View: 66, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 16:20:43) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 16:58:05) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-28 16:59:58) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_header (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]

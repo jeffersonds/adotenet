@@ -1,0 +1,95 @@
+/*CSS Reset - Resetando algumas caracteristicas que podem atrapalhar no desenvolvimento*/
+*{margin:0;padding:0}
+ul, nav{list-style:none}
+a{text-decoration:none;color:#C36931}
+a:hover{text-decoration:underline}
+
+/*html5 - deixando as tags como elementos de bloco*/
+article,aside,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+/*classes*/
+.nobd{border:none!important}
+.nobdt{border-top:none!important}
+.nobdb{border-bottom:none!important}
+.nobdl{border-left:none!important}
+.nopdr{padding-right:0!important}
+
+.radius{-moz-border-radius: 10px;-webkit-border-radius: 10px}
+.shadow{-moz-box-shadow: 0 0 12px #EAD8B3;-webkit-box-shadow: 0 0 12px #EAD8B3;box-shadow: 0 0 12px #EAD8B3}
+.list li{padding:5px 0;border-top:1px solid #FDFBF8;border-bottom:1px solid #EAD8B3}
+.box{float:left;width:135px;padding:14px;border:1px solid #FDFBF8;background:#F7F0DE;text-align:center;margin-bottom:20px}
+.boxMensagem{position:absolute;top:330px;left:265px;width:700px;background:#F7F0DE;opacity:0.9;border:5px solid #C36931;text-align:center;font:bold 20px arial;padding:20px;-moz-box-shadow:0 0 12px #C36931;}
+/*Site*/
+body{font-family:arial, tahoma, helvetica, verdana;font-size:12px;color:#7B7872;background:#FCF9F3}
+h3{font:bold 14px arial;color:#C36931;text-transform:uppercase;margin-bottom:10px}
+.wrapp{width:984px;margin:0 auto}
+
+header{float:left}
+header div.top{float:left;height:60px;width:984px}
+header div.top h1 a{float:left;font:bold 33px georgia;padding:14px 0;text-align:center;color:#EAD8B3;text-shadow:1px 1px 1px #C36931;height:60px;width:166px;margin-right:20px}
+header div.top div{float:left;height:60px;width:798px;background:#EFE1C6}
+header div.top nav{float:left;height:60px;font:bold 15px arial}
+header div.top nav li{text-align:center;margin-top:10px;padding:10px 15px;border-right:1px solid #EAD8B3;border-left:1px solid #F5ECDB}
+
+header div.top form{float:left;margin:20px 0 0 17px}
+header div.top input{width:105px}
+header div.top input[type=submit]{width:50px}
+
+header div.down{float:left;width:984px;margin:20px 0}
+header div.down nav{float:left;padding:14px;border:1px solid #FDFBF8;width:135px;margin:15px 20px 0 0;background:#F7F0DE;text-align:center}
+header div.down nav li a{display:block;width:135px}
+header div.down .slideshow{float:left;width:798px;background:#F7F0DE}
+header nav li{float:left}
+
+/*SlideShow*/
+#featured{position:relative;border:5px solid #F7F0DE;background:#FCF9F3}
+#featured ul.ui-tabs-nav{position:absolute;top:0;left:538px;list-style:none;padding:0;margin:0;width:249px}
+#featured ul.ui-tabs-nav li{padding:1px 0; padding-left:13px;font-size:12px;color:#666}
+#featured ul.ui-tabs-nav li img{float:left; margin:2px 5px;background:#fff;padding:2px;border:1px solid #eee}
+#featured ul.ui-tabs-nav li span{font-size:11px; font-family:Verdana;line-height:18px}
+#featured li.ui-tabs-nav-item a{display:block;height:60px;background:#FCF9F3;line-height:20px}
+#featured li.ui-tabs-nav-item a:hover{background:#F7EFDE}
+#featured li.ui-tabs-selected{background:url('../img/slide/selected-item.gif') top left no-repeat}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{background:#F7F0DE}
+#featured .ui-tabs-panel{width:535px;height:186px;background:#999;position:relative}
+#featured .ui-tabs-panel .info{position:absolute;top:115px;left:0;height:70px;background: url('../img/slide/transparent-bg.png')}
+#featured .info h2{font-size:18px; font-family:Georgia, serif;color:#fff; padding:5px; margin:0;overflow:hidden}
+#featured .info p{margin:0 5px;font-family:Verdana; font-size:11px;line-height:15px; color:#f0f0f0}
+#featured .info a{text-decoration:none;color:#fff}
+#featured .info a:hover{text-decoration:underline}
+#featured .ui-tabs-hide{display:none}
+
+/*Barra lateral esquerda*/
+.sideLeft{float:left;width:166px}
+.sideLeft .busca{text-align:center;border-bottom:1px solid #FDFBF8;padding-bottom:10px}
+.sideLeft .busca select{border:1px solid #EAD8B3;width:135px;margin:5px 0;color:#C36931;text-transform:uppercase}
+.sideLeft .busca input{float:left}
+
+/*Barra lateral direita*/
+.sideRight{float:right;width:166px}
+.newsletter input{width:128px}
+.newsletter input[type=submit]{width:71px;margin-top:10px}
+
+/*Conteudo*/
+.content{float:left;width:612px;margin:0 20px}
+.content fieldset{border:none;background:#F7F0DE;margin-bottom:20px}
+.content h2{font:bold 18px arial,tahoma;text-transform:uppercase;display:inline;text-shadow:1px 1px 20px #ccc}
+.content .top{float:left;padding:5px 15px;width:582px}
+.content .top a{float:right;font:bold 13px arial}
+.content article{float:left;width:284px;padding:13px}
+.content article img{float:left;display:block;margin-bottom:15px;margin-right:15px;-moz-box-shadow: 0 0 10px #262626;-webkit-box-shadow: 0 0 10px #262626;box-shadow: 0 0 10px #262626}
+.content article strong{font-size:13px}
+.content article ul{float:left}
+.content article ul li a{display:block;margin-top:20px}
+.content article p{float:left;clear:both}
+
+/*Contato*/
+.form{margin:0 auto;width:400px}
+.form input{border:1px solid #666666;float:left;width:400px;height:20px}
+.form input:focus{border:1px solid #70B8FF}
+.form .radio{border:medium none;float:none;width:14px}
+.form textarea{border:1px solid #666666;height:200px;width:400px}
+.form textarea:focus{border:1px solid #70B8FF}
+
+/*Rodape*/
+footer{float:left;width:984px;margin:20px 0}

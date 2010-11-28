@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home - AdoteNet</title>
+    <!--[if lt IE 9]>
+        <script src="js/html5.js"></script>
+		<%= javascript_include_tag 'html5' %>
+    <![endif]-->
+    
+	<%= stylesheet_link_tag 'css' %>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.5.3/jquery-ui.min.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+		});
+	</script>
+  </head>
+  <body>
+    <div class="wrapp">
+      <header>
+      	<%= render :partial => "shared/header" %>
+      </header>
+      <section class="sideLeft">
+        <div class="busca box radius shadow">
+          <h3>Busca</h3>
+          <form name="formBusca" action="javascript:void(0);" method="port"> 
+            <select name="animal" id="animal">
+              <option value="0">ANIMAL</option>
+            </select>
+            <select name="sexo" id="sexo">
+              <option value="0">SEXO</option>
+            </select>
+            <select name="porte" id="porte">
+              <option value="0">Porte</option>
+            </select>
+            <select name="estado" id="estado">
+              <option value="0">Estado</option>
+            </select>
+            <select name="Cidade" id="cidade">
+              <option value="0">Cidade</option>
+            </select>
+            <input type="submit" value="buscar">
+          </form>
+        </div>
+        <div class="links box radius shadow">
+          <h3>Links</h3>
+          <nav class="list">
+              <li class="nobdt"><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+          </nav>
+        </div>
+        <div class="publicidade">
+         
+        </div>
+      </section>
+      <section class="content">
+        <%= yield %>
+      </section>
+      <!-- Lateral Direita -->
+      <section class="sideRight">
+        <div class="links box radius shadow">
+          <h3>Últimas Notícias</h3>
+          <nav class="list">
+              <li class="nobdt"><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+          </nav>
+        </div>
+        <div class="newsletter box radius shadow">
+          <h3>Newsletter</h3>
+          <form>
+            <input type="text" name="newsletter" id="newsletter" />
+            <input type="submit" value="Cadastrar" />
+          </form>
+        </div>
+		<div class="newsletter box radius shadow">
+          <h3>Publicidade</h3>
+          
+        </div>
+      </section>
+      <!-- Lateral Direita / -->
+      <footer class="radius shadow">
+        <address>Rua do Dog, 1666</address>
+      </footer>
+		<div class="boxMensagem radius">E-mail Cadastrado com Sucesso !</div>
+    </div>
+  </body>
+</html>

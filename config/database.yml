@@ -1,0 +1,41 @@
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
+  
+# development:
+#   adapter: mysql
+#   encoding: utf8
+#   database: adotenet_development
+#   username: root
+#   password:
+#   host: localhost
+# 
+# test:
+#   adapter: mysql
+#   encoding: utf8
+#   database: adotenet_test
+#   username: root
+#   password:
+#   host: localhost
+# 
+# production:
+#   adapter: mysql
+#   encoding: utf8
+#   database: adotenet_production
+#   username: root
+#   password: 
+#   host: localhost

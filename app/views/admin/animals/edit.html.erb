@@ -1,0 +1,8 @@
+<h1>Editing animal</h1>
+
+<% form_for([:admin, @animal]) do |f| %>
+	<%= render :partial => "form", :locals => { :f => f }%>
+<% end %>
+
+<%= link_to 'Show', [:admin, @animal] %> |
+<%= link_to 'Back', admin_animals_path %>
