@@ -18,7 +18,7 @@ article,aside,figure,footer,header,hgroup,menu,nav,section{display:block}
 .shadow{-moz-box-shadow: 0 0 12px #EAD8B3;-webkit-box-shadow: 0 0 12px #EAD8B3;box-shadow: 0 0 12px #EAD8B3}
 .list li{padding:5px 0;border-top:1px solid #FDFBF8;border-bottom:1px solid #EAD8B3}
 .box{float:left;width:135px;padding:14px;border:1px solid #FDFBF8;background:#F7F0DE;text-align:center;margin-bottom:20px}
-.boxMensagem{position:absolute;top:330px;left:265px;width:700px;background:#F7F0DE;opacity:0.9;border:5px solid #C36931;text-align:center;font:bold 20px arial;padding:20px;-moz-box-shadow:0 0 12px #C36931;}
+.boxMensagem{display:none;position:absolute;top:330px;left:265px;width:700px;background:#F7F0DE;opacity:0.9;border:5px solid #C36931;text-align:center;font:bold 20px arial;padding:20px;-moz-box-shadow:0 0 12px #C36931;}
 /*Site*/
 body{font-family:arial, tahoma, helvetica, verdana;font-size:12px;color:#7B7872;background:#FCF9F3}
 h3{font:bold 14px arial;color:#C36931;text-transform:uppercase;margin-bottom:10px}
