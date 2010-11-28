@@ -4491,3 +4491,69 @@ Rendering template within layouts/application
 Rendering main/index
 Rendered shared/_header (0.1ms)
 Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAnimals (20101113180631)
+Migrating to CreateTipos (20101113203025)
+Migrating to CreateRacas (20101128214002)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (31.5ms)[0m   [0mCREATE TABLE "racas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_raca" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128214002')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("animals")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("racas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;36;1mRaca Create (41.4ms)[0m   [0;1mINSERT INTO "racas" ("created_at", "updated_at", "tipo_raca") VALUES('2010-11-28 22:11:00', '2010-11-28 22:11:00', 'Vira Lata')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-28 20:13:21) [GET]
+
+ActionController::RoutingError (No route matches "/admin" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-11-28 20:13:31) [GET]
+  [4;36;1mAnimal Load (0.7ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.2ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 18ms (View: 12, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-11-28 20:13:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" [0m
+  [4;36;1mRaca Load (0.2ms)[0m   [0;1mSELECT * FROM "racas" [0m
+
+ActionView::TemplateError (undefined method `nome' for #<Raca:0x1011a2690>) on line #23 of app/views/admin/animals/_form.html.erb:
+20: 
+21: <p>
+22:   <%= f.label :raca %><br />
+23:    <%= f.collection_select(:tipo_id, Raca.all, :id, :nome ) %>
+24: </p>
+25: <p>
+26:   <%= f.label :porte %><br />
+
+    app/views/admin/animals/_form.html.erb:23
+    app/views/admin/animals/edit.html.erb:4
+    app/views/admin/animals/edit.html.erb:3
+
+Rendered rescues/_trace (72.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
