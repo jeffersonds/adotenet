@@ -20,7 +20,7 @@
 
 <p>
   <%= f.label :raca %><br />
-  <%= f.text_field :raca %>
+   <%= f.collection_select(:tipo_id, Raca.all, :id, :nome ) %>
 </p>
 <p>
   <%= f.label :porte %><br />
