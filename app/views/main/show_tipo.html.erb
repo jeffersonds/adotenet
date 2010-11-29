@@ -1,0 +1,23 @@
+<fieldset class="radius shadow">
+	<% @tipo.animals.each do |animal| %>
+		<div class="top">
+			<h2><%= @tipo.nome %></h2>
+			<a href="javascript:void(0);">Ver todos animais em <%= @tipo.nome %></a>
+		</div>
+		<article class="nopdr">
+			<%= image_tag (animal.photo.url(:small)), :width => "160", :height => "150" %>
+			<ul>
+				<li><strong>Animal: </strong><%= @tipo.nome %></li>
+				<li><strong>Sexo: </strong><%= @tipo.nome %></li>
+				<li><strong>Idade: </strong><%= @tipo.nome %></li>
+				<li><strong>Raça: </strong><%= @tipo.nome %></li>
+				<li><strong>Castrado: </strong><%= @tipo.nome %></li>
+				<li><strong>Vermifugado: </strong><%= @tipo.nome %></li>
+				<li><strong>Vacinado: </strong><%= @tipo.nome %></li>
+				<li><a href="javascript:void(0);">Saiba mais ></a></li>
+			</ul>
+			<p><strong>Descrição: </strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>  
+		</article>
+		
+	<% end %>
+</fieldset>

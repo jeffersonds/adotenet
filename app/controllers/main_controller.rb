@@ -4,6 +4,10 @@ class MainController < ApplicationController
     @tipos = Tipo.all
   end
   
+  def show_tipo
+    @tipo = Tipo.find(params[:id])
+  end
+  
   def show
   end
 
