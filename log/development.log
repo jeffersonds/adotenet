@@ -11204,3 +11204,786 @@ NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x10
 Rendered rescues/_trace (108.1ms)
 Rendered rescues/_request_and_response (0.5ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-11-30 23:51:03) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 21ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 23:51:03) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-30 23:51:03) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:13:25) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.2ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 26ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:13:25) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:13:26) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:13:59) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 25ms (View: 19, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:13:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:13:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:14:01) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:14:02) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:14:02) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:14:22) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:14:22) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:14:23) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:15:37) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:15:37) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:15:37) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:16:18) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:16:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:16:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:17:54) [GET]
+  [4;36;1mTipo Load (0.7ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.2ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:17:54) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:17:55) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:18:58) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 26ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:18:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:18:59) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:19:10) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:19:10) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:19:10) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:23:25) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 25ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:23:25) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:23:25) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:23:53) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:23:54) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:23:54) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:24:30) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:24:31) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:24:31) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:24:51) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:24:51) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:25:50) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:25:50) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:25:50) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:28:18) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.2ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 87ms (View: 81, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:28:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:28:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:31:55) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.7ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.2ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 21ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:31:56) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:31:56) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:33:28) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 22ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:33:28) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:33:28) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:34:47) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.3ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 78ms (View: 72, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:34:48) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:34:48) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:35:18) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.8ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 27ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:35:18) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:35:19) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#quem_somos (for 127.0.0.1 at 2010-12-01 01:47:45) [GET]
+Rendering template within layouts/application
+Rendering main/quem_somos
+Rendered shared/_header (0.1ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/quem_somos/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/anuncie.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/banner3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:47:46) [GET]
+
+ActionController::RoutingError (No route matches "/quem_somos/img/slide/anuncie.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#como_ajudar (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+Rendering template within layouts/application
+Rendering main/como_ajudar
+Rendered shared/_header (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/como_ajudar/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/banner2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/banner3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/anuncie.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:15) [GET]
+
+ActionController::RoutingError (No route matches "/como_ajudar/img/slide/banner2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#contato (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+Rendering template within layouts/application
+Rendering main/contato
+Rendered shared/_header (0.1ms)
+Completed in 60ms (View: 58, DB: 0) | 200 OK [http://localhost/contato/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/banner2.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/banner3.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/image4.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/anuncie.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:20) [GET]
+
+ActionController::RoutingError (No route matches "/contato/img/slide/banner1.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:48:26) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 20ms (View: 14, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:26) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:26) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-01 01:48:54) [GET]
+  [4;36;1mTipo Load (0.6ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (0.6ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (0.1ms)
+Completed in 21ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-01 01:48:54) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
