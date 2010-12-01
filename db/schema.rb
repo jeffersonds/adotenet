@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101128214002) do
+ActiveRecord::Schema.define(:version => 20101128225724) do
 
   create_table "animals", :force => true do |t|
     t.integer  "usuario_id"
     t.string   "nome"
-    t.integer  "idate"
+    t.integer  "idade"
     t.integer  "tipo_id"
     t.integer  "raca_id"
     t.string   "porte"
@@ -26,6 +26,10 @@ ActiveRecord::Schema.define(:version => 20101128214002) do
     t.boolean  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "racas", :force => true do |t|
@@ -39,5 +43,19 @@ ActiveRecord::Schema.define(:version => 20101128214002) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "users", :force => true do |t|
+    t.string   "login",                     :limit => 40
+    t.string   "name",                      :limit => 100, :default => ""
+    t.string   "email",                     :limit => 100
+    t.string   "crypted_password",          :limit => 40
+    t.string   "salt",                      :limit => 40
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "remember_token",            :limit => 40
+    t.datetime "remember_token_expires_at"
+  end
+
+  add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
 end

@@ -14,6 +14,16 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+			$("#newsletter").click(function(){
+				$("#newsletter").attr("value", "");
+			});
+			$("#newsletter").blur(function(){
+				$("#newsletter").attr("value", "Cadastre seu E-mail");
+			});
+			$(".newsletter input[type=submit]").click(function(){
+				$(".boxMensagem").show("slow").delay(800).hide("slow");
+				
+			});
 		});
 	</script>
   </head>
@@ -41,23 +51,24 @@
             <select name="Cidade" id="cidade">
               <option value="0">Cidade</option>
             </select>
-            <input type="submit" value="buscar">
+            <input type="submit" value="Buscar">
           </form>
         </div>
         <div class="links box radius shadow">
           <h3>Links</h3>
           <nav class="list">
-              <li class="nobdt"><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li class="nobdt"><a href="javascript:void(0);">Maus tratos - Denuncie</a></li>
+              <li><a href="javascript:void(0);">Como doar um animal</a></li>
+              <li><a href="javascript:void(0);">Benefícios da castração</a></li>
+              <li><a href="javascript:void(0);">Seu bichinho se perdeu?</a></li>
+              <li><a href="javascript:void(0);">Anunciando animais</a></li>
+              <li><a href="javascript:void(0);">Abrigos: triste realidade</a></li>
+              <li><a href="javascript:void(0);">Adoção consciente</a></li>
           </nav>
         </div>
-        <div class="publicidade">
-         
+        <div class="newsletter box radius shadow">
+          <h3>Publicidade</h3>
+			<img src="img/slide/anuncie.jpg" width="135" height="160" alt="" />
         </div>
       </section>
       <section class="content">
@@ -68,25 +79,25 @@
         <div class="links box radius shadow">
           <h3>Últimas Notícias</h3>
           <nav class="list">
-              <li class="nobdt"><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
-              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li class="nobdt"><a href="javascript:void(0);">PETA pagará tratamento de Lindsay Lohan caso ela vire vegetariana</a></li>
+              <li><a href="javascript:void(0);">Preso britânico que colocou gato no micro-ondas</a></li>
+              <li><a href="javascript:void(0);">Cães ajudam a diminuir estresse em crianças autistas</a></li>
+              <li><a href="javascript:void(0);">Fique atento: obesidade pode reduzir a expectativa de vida do seu mascote</a></li>
+              <li><a href="javascript:void(0);">Anatomista alemão vende cadáveres de animais na Internet </a></li>
+              <li><a href="javascript:void(0);">Projeto prevê multa para mau trato a animais em SP</a></li>
+              <li><a href="javascript:void(0);">Britânica que pôs gato no lixo é multada em 280 euros</a></li>
           </nav>
         </div>
         <div class="newsletter box radius shadow">
           <h3>Newsletter</h3>
-          <form>
-            <input type="text" name="newsletter" id="newsletter" />
+          <!--<form>-->
+            <input type="text" name="newsletter" id="newsletter" value="Cadastre seu E-mail"/>
             <input type="submit" value="Cadastrar" />
-          </form>
+          <!--</form>-->
         </div>
 		<div class="newsletter box radius shadow">
           <h3>Publicidade</h3>
-          
+			<img src="img/slide/anuncie.jpg" width="135" height="160" alt="" />
         </div>
       </section>
       <!-- Lateral Direita / -->
