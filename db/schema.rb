@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20101128225724) do
   create_table "animals", :force => true do |t|
     t.integer  "usuario_id"
     t.string   "nome"
-    t.integer  "idade"
+    t.integer  "idate"
     t.integer  "tipo_id"
     t.integer  "raca_id"
     t.string   "porte"

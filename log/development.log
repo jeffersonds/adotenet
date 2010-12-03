@@ -11987,3 +11987,262 @@ ActionController::RoutingError (No route matches "/photos/small/missing.png" wit
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-12-02 23:23:41) [GET]
+  [4;36;1mTipo Load (20.4ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+Rendering template within layouts/application
+Rendering main/index
+  [4;35;1mAnimal Load (1.0ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 1) LIMIT 2[0m
+  [4;36;1mAnimal Load (0.2ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals".tipo_id = 2) LIMIT 2[0m
+  [4;35;1mAnimal Load (0.1ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals".tipo_id = 3) LIMIT 2[0m
+Rendered shared/_header (28.7ms)
+Completed in 224ms (View: 161, DB: 22) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-02 23:23:41) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-12-02 23:23:42) [GET]
+
+ActionController::RoutingError (No route matches "/photos/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#index (for 127.0.0.1 at 2010-12-02 23:26:40) [GET]
+  [4;36;1mAnimal Load (1.0ms)[0m   [0;1mSELECT * FROM "animals" [0m
+Rendering template within layouts/admin
+Rendering admin/animals/index
+  [4;35;1mTipo Load (0.3ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "tipos" WHERE ("tipos"."id" = 1) [0m
+Completed in 119ms (View: 110, DB: 1) | 200 OK [http://localhost/admin/animals]
+
+
+Processing Admin::AnimalsController#edit (for 127.0.0.1 at 2010-12-02 23:26:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAnimal Load (0.4ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" [0m
+  [4;36;1mRaca Load (0.3ms)[0m   [0;1mSELECT * FROM "racas" [0m
+Rendered admin/animals/_form (138.6ms)
+Completed in 181ms (View: 172, DB: 1) | 200 OK [http://localhost/admin/animals/1/edit]
+
+
+Processing Admin::AnimalsController#update (for 127.0.0.1 at 2010-12-02 23:26:46) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "id"=>"1", "animal"=>{"classificacao"=>"0", "idate"=>"1", "nome"=>"Thor", "porte"=>"grande", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"1", "status"=>"0", "descricao"=>"Cachorro Dócil e Brincalhão.", "vermifugado"=>"1"}}
+  [4;35;1mAnimal Load (0.4ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+[paperclip] Saving attachments.
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x104426170>):
+  app/controllers/admin/animals_controller.rb:65:in `update'
+  app/controllers/admin/animals_controller.rb:62:in `update'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#update (for 127.0.0.1 at 2010-12-02 23:27:15) [PUT]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "id"=>"1", "animal"=>{"classificacao"=>"0", "photo"=>#<File:/var/folders/sB/sBmD4vBvGz8Muf+EcYfvwk+++TI/-Tmp-/RackMultipart20101202-30890-irdigb-0>, "idate"=>"1", "nome"=>"Thor", "porte"=>"grande", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"1", "status"=>"0", "descricao"=>"Cachorro Dócil e Brincalhão.", "vermifugado"=>"1"}}
+  [4;36;1mAnimal Load (0.4ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 1) [0m
+[paperclip] identify -format %wx%h '/var/folders/sB/sBmD4vBvGz8Muf+EcYfvwk+++TI/-Tmp-/stream20101202-30890-1381md7-0.jpg[0]' 2>/dev/null
+[paperclip] An error was received while processing: #<Paperclip::CommandNotFoundError: Paperclip::CommandNotFoundError>
+Rendering template within layouts/admin
+Rendering admin/animals/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" [0m
+  [4;36;1mTipo Load (0.4ms)[0m   [0;1mSELECT * FROM "tipos" [0m
+  [4;35;1mRaca Load (0.2ms)[0m   [0mSELECT * FROM "racas" [0m
+Rendered admin/animals/_form (127.4ms)
+Completed in 193ms (View: 132, DB: 1) | 200 OK [http://localhost/admin/animals/1]
+
+
+Processing Admin::AnimalsController#destroy (for 127.0.0.1 at 2010-12-02 23:29:00) [DELETE]
+  Parameters: {"authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "id"=>"4"}
+  [4;36;1mAnimal Load (0.4ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 4) [0m
+[paperclip] Deleting attachments.
+  [4;35;1mAnimal Destroy (0.4ms)[0m   [0mDELETE FROM "animals" WHERE "id" = 4[0m
+
+NameError (undefined local variable or method `animals_url' for #<Admin::AnimalsController:0x1043cb270>):
+  app/controllers/admin/animals_controller.rb:81:in `destroy'
+  app/controllers/admin/animals_controller.rb:80:in `destroy'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#show (for 127.0.0.1 at 2010-12-02 23:29:28) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mAnimal Load (0.1ms)[0m   [0;1mSELECT * FROM "animals" WHERE ("animals"."id" = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Animal with ID=4):
+  app/controllers/admin/animals_controller.rb:16:in `show'
+
+Rendered rescues/_trace (32.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#destroy (for 127.0.0.1 at 2010-12-02 23:30:20) [DELETE]
+  Parameters: {"authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "id"=>"4"}
+  [4;35;1mAnimal Load (0.2ms)[0m   [0mSELECT * FROM "animals" WHERE ("animals"."id" = 4) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Animal with ID=4):
+  app/controllers/admin/animals_controller.rb:77:in `destroy'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing Admin::AnimalsController#new (for 127.0.0.1 at 2010-12-02 23:35:33) [GET]
+Rendering template within layouts/admin
+Rendering admin/animals/new
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mTipo Load (0.4ms)[0m   [0mSELECT * FROM "tipos" [0m
+  [4;36;1mRaca Load (0.2ms)[0m   [0;1mSELECT * FROM "racas" [0m
+Rendered admin/animals/_form (27.0ms)
+Completed in 126ms (View: 118, DB: 1) | 200 OK [http://localhost/admin/animals/new]
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-12-02 23:35:53) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "animal"=>{"classificacao"=>"0", "idate"=>"1", "nome"=>"asd1", "porte"=>"1", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"0", "status"=>"0", "descricao"=>"1", "vermifugado"=>"1"}}
+  [4;35;1mAnimal Create (0.4ms)[0m   [0mINSERT INTO "animals" ("classificacao", "idate", "created_at", "photo_file_size", "usuario_id", "nome", "updated_at", "photo_file_name", "porte", "photo_content_type", "tipo_id", "raca_id", "photo_updated_at", "castrado", "vacinado", "descricao", "status", "vermifugado") VALUES(0, 1, '2010-12-03 01:35:53', NULL, NULL, 'asd1', '2010-12-03 01:35:53', NULL, '1', NULL, 1, NULL, NULL, 't', 'f', '1', 'f', 't')[0m
+[paperclip] Saving attachments.
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x104385d38>):
+  app/controllers/admin/animals_controller.rb:48:in `create'
+  app/controllers/admin/animals_controller.rb:45:in `create'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAnimals (20101113180631)
+Migrating to CreateTipos (20101113203025)
+Migrating to CreateRacas (20101128214002)
+Migrating to CreateUsers (20101128214717)
+Migrating to AddAttachmentsPhotoToAnimal (20101128225724)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("animals")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("racas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-12-02 23:39:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "animal"=>{"classificacao"=>"0", "idate"=>"1", "nome"=>"asd1", "porte"=>"1", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"0", "status"=>"0", "descricao"=>"1", "vermifugado"=>"1"}}
+  [4;36;1mAnimal Create (0.4ms)[0m   [0;1mINSERT INTO "animals" ("classificacao", "idate", "created_at", "photo_file_size", "usuario_id", "nome", "updated_at", "photo_file_name", "porte", "photo_content_type", "tipo_id", "raca_id", "photo_updated_at", "castrado", "vacinado", "descricao", "status", "vermifugado") VALUES(0, 1, '2010-12-03 01:39:27', NULL, NULL, 'asd1', '2010-12-03 01:39:27', NULL, '1', NULL, 1, NULL, NULL, 't', 'f', '1', 'f', 't')[0m
+[paperclip] Saving attachments.
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x10430a1b0>):
+  app/controllers/admin/animals_controller.rb:48:in `create'
+  app/controllers/admin/animals_controller.rb:45:in `create'
+
+Rendered rescues/_trace (36.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateAnimals (20101113180631)
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "animals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario_id" integer, "nome" varchar(255), "idate" integer, "tipo_id" integer, "raca_id" integer, "porte" varchar(255), "castrado" boolean, "vermifugado" boolean, "vacinado" boolean, "descricao" text, "classificacao" integer, "status" boolean, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101113180631')[0m
+Migrating to CreateTipos (20101113203025)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101113203025')[0m
+Migrating to CreateRacas (20101128214002)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "racas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "tipo_raca" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128214002')[0m
+Migrating to CreateUsers (20101128214717)
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(40), "name" varchar(100) DEFAULT '', "email" varchar(100), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(40), "remember_token_expires_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE UNIQUE INDEX "index_users_on_login" ON "users" ("login")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101128214717')[0m
+Migrating to AddAttachmentsPhotoToAnimal (20101128225724)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mALTER TABLE "animals" ADD "photo_file_name" varchar(255)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "animals" ADD "photo_content_type" varchar(255)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "animals" ADD "photo_file_size" integer[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mALTER TABLE "animals" ADD "photo_updated_at" datetime[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101128225724')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("animals")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("racas")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-12-02 23:48:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "animal"=>{"classificacao"=>"0", "idate"=>"1", "nome"=>"asd1", "porte"=>"1", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"0", "status"=>"0", "descricao"=>"1", "vermifugado"=>"1"}}
+  [4;35;1mAnimal Create (0.6ms)[0m   [0mINSERT INTO "animals" ("classificacao", "idate", "created_at", "photo_file_size", "usuario_id", "nome", "updated_at", "photo_file_name", "porte", "photo_content_type", "tipo_id", "raca_id", "photo_updated_at", "castrado", "vacinado", "descricao", "status", "vermifugado") VALUES(0, 1, '2010-12-03 01:48:43', NULL, NULL, 'asd1', '2010-12-03 01:48:43', NULL, '1', NULL, 1, NULL, NULL, 't', 'f', '1', 'f', 't')[0m
+[paperclip] Saving attachments.
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x1042295e8>):
+  app/controllers/admin/animals_controller.rb:48:in `create'
+  app/controllers/admin/animals_controller.rb:45:in `create'
+
+Rendered rescues/_trace (105.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Admin::AnimalsController#create (for 127.0.0.1 at 2010-12-02 23:48:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ggct2c9qUCRYgOGd//oP+kAsc8EkFUyXJwRCWhNIjfU=", "animal"=>{"classificacao"=>"0", "idate"=>"1", "nome"=>"asd1", "porte"=>"1", "tipo_id"=>"1", "castrado"=>"1", "vacinado"=>"0", "status"=>"0", "descricao"=>"1", "vermifugado"=>"1"}}
+  [4;36;1mAnimal Create (0.4ms)[0m   [0;1mINSERT INTO "animals" ("classificacao", "idate", "created_at", "photo_file_size", "usuario_id", "nome", "updated_at", "photo_file_name", "porte", "photo_content_type", "tipo_id", "raca_id", "photo_updated_at", "castrado", "vacinado", "descricao", "status", "vermifugado") VALUES(0, 1, '2010-12-03 01:48:47', NULL, NULL, 'asd1', '2010-12-03 01:48:47', NULL, '1', NULL, 1, NULL, NULL, 't', 'f', '1', 'f', 't')[0m
+[paperclip] Saving attachments.
+
+NoMethodError (undefined method `animal_url' for #<Admin::AnimalsController:0x1043e3028>):
+  app/controllers/admin/animals_controller.rb:48:in `create'
+  app/controllers/admin/animals_controller.rb:45:in `create'
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
